@@ -12,8 +12,12 @@ jobs:
       - uses: actions/setup-node@v3
       # Ставим зависимости
       - run: npm install
+      #build
+      - run: npm run build
+      #start
+      - run: npm start
       # Запускаем линтер
-      - run: npm run lint
+      - run: npx eslint .
       # Запускаем тесты
       # у шагов может быть имя, иногда это помогает отладке
       # имя выводится на Github при просмотре сборки
