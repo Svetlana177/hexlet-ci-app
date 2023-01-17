@@ -8,8 +8,14 @@ jobs:
     steps:
       # Клонируем репозиторий
       - uses: actions/checkout@v3
+        with:
+          node-version: 16
+          cache: 'npm'
       # Устанавливаем Node.js
       - uses: actions/setup-node@v3
+      - uses: snyk/actions/node@master
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
       # Ставим зависимости & build
       - run: make setup
       #start
