@@ -2,6 +2,11 @@
 
 Starting boilerplate of [Strapi](https://strapi.io/) application
 
+#Задача:
+Нужно только убедиться, что экшен работает - Статуса failed достаточно.
+Исправлять проблемы задачи не стоит, но если очень хочется, то конечно можно. :)
+
+
 ## System requirements
 
 * NodeJS >= 18

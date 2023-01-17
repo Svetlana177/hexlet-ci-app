@@ -12,6 +12,9 @@ start:
 test:
 	npm test
 
+test-snyk:
+	npm i -g snyk
+
 lint:
 	npx eslint .
 
